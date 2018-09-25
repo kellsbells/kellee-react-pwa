@@ -5,7 +5,8 @@ import instagram from '../social/instagram.svg'
 import github from '../social/github.svg'
 import twitter from '../social/twitter.svg'
 import linkedin from '../social/linkedin.svg'
-import resume from '../Kellee-Martins-Resume.pdf'
+import email from '../social/email.svg'
+
 
 
 class Contact extends Component {
@@ -14,7 +15,7 @@ class Contact extends Component {
 	  return (
 	    	<section id="contact" className="Contact gradient">
 	    		<div className="Contact-container">
-	        	<img className="Contact-heading" src={contact} alt="Contact Kellee Martins" />
+	        	<h3>slide into my DMs</h3>
 
 	        	<div className="Contact-social">
 	        		<a href="https://www.instagram.com/kelleebutton/" target="_blank" rel="noopener noreferrer">
@@ -29,17 +30,11 @@ class Contact extends Component {
 	        		<a href="https://www.linkedin.com/in/kelleemartins" target="_blank" rel="noopener noreferrer">
 	        			<img className="Social-linkedin" src={linkedin} alt="LinkedIn" />
 	        		</a>
-	        	</div>
 
-	        	<div className="Contact-text">
-	        		Send me an <a href="mailto:kelleemartins@gmail.com">email</a>, I'd love to hear from you! 
+	        		<a href="https://www.linkedin.com/in/kelleemartins" target="_blank" rel="noopener noreferrer">
+	        			<img className="Social-linkedin" src={email} alt="LinkedIn" />
+	        		</a>
 	        	</div>
-
-	        	<div className="Contact-ctas">
-					<div className="Contact-cta">
-						<a className="button" href={resume} download="">Download Resume</a>
-					</div>
-	        	</div>        	
 			</div>
 	      </section>
 	  );

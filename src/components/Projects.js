@@ -21,10 +21,9 @@ class Projects extends Component {
 
 	render() {
 	  	return (
-	    	<section id="projects" className="Projects gradient">
+	    	<section id="projects" className="Projects">
 	    		<div className="Projects-container">
-		        	<img className="Projects-heading" src={projects} alt="Kellee's Projects" />
-
+		        	<h3>all the things</h3>
 		            <ul className="Projects-list">
 						{
 							Object

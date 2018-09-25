@@ -6,11 +6,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #5c5c5c;
   box-sizing: border-box;
-  text-align: center;
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.75px;
 }
+
 
 [class*='-container'] {
   width: 100%;
@@ -47,6 +47,43 @@ body {
 .button:hover {
   background-color: #FFF;
   color: #5c5c5c;
+}
+
+
+.gradient {
+  background: rgba(116,227,236, 1);
+  background-image: -ms-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
+  background-image: -moz-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
+  background-image: -o-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
+  background-image: -webkit-gradient(linear, left top, left top, color-stop(0, rgba(62,35,255,1)), color-stop(100, rgba(255,35,98,1)));
+  background-image: -webkit-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
+  background-image: linear-gradient(to right, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
+  color: #FFFFFF;
+}
+
+.gradient-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: -webkit-linear-gradient(#eee, #333);
+  background: -ms-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
+  background: -moz-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
+  background: -o-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
+  background: -webkit-gradient(linear, left top, left top, color-stop(0, rgba(62,35,255,1)), color-stop(100, rgba(255,35,98,1)));
+  background: -webkit-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
+  background: linear-gradient(to right, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gradient-opacity {
+  background: rgba(116,227,236, 0.6);
+  background-image: -ms-linear-gradient(left, rgba(62,35,255,0.6) 0%, rgba(255,35,98,0.6) 100%);
+  background-image: -moz-linear-gradient(left, rgba(62,35,255,0.6) 0%, rgba(255,35,98,0.6) 100%);
+  background-image: -o-linear-gradient(left, rgba(62,35,255,0.6) 0%, rgba(255,35,98,0.6) 100%);
+  background-image: -webkit-gradient(linear, left top, left top, color-stop(0, rgba(62,35,255,0.6)), color-stop(100, rgba(255,35,98,0.6)));
+  background-image: -webkit-linear-gradient(left, rgba(62,35,255,0.6) 0%, rgba(255,35,98,0.6) 100%);
+  background-image: linear-gradient(to right, rgba(62,35,255,0.6) 0%, rgba(255,35,98,0.6) 100%);
+  color: #FFFFFF;
 }
 
 /****** HEADER ******/
@@ -106,11 +143,9 @@ body {
   height: 100vh; 
   display: flex; 
   justify-content: center;
-  align-items: center;
-  background-image: url('./bg.jpg');
+  align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
   overflow: hidden;
 }
 
@@ -119,6 +154,11 @@ body {
   display: block;
   overflow: hidden;
   min-width: 600px;
+}
+
+.Hero-container h1 {
+  font-size: 8vw;
+  margin: 0;
 }
 
 .Hero-container h2 {
@@ -131,31 +171,27 @@ body {
 /****** ABOUT ******/
 
 .About {
-  background: rgba(116,227,236, 1);
-  background-image: -ms-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: -moz-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: -o-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: -webkit-gradient(linear, left top, left top, color-stop(0, rgba(62,35,255,1)), color-stop(100, rgba(255,35,98,1)));
-  background-image: -webkit-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: linear-gradient(to right, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  color: #FFFFFF;
   padding: 60px 0;
+  text-align: right;
+}
+
+.About h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 5vw;
+  margin: 0;
+}
+
+.About h4 {
+  margin: 0;
+  padding-top: 10px;
 }
 
 
-/****** ABOUT ******/
-
-.About-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+.About p {
+  margin: 0;
+  padding: 10px 0 5px;
 }
 
-.About-icon {
-  padding: 15px;
-  width: 8%;
-}
 
 /****** PROJECTS ******/
 
@@ -167,6 +203,13 @@ ul li {
   padding: 60px 0;
 }
 
+.Projects h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
 .Projects-heading {
   max-height: 65px;
 }
@@ -175,6 +218,7 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 
 .Project {
@@ -200,7 +244,7 @@ ul li {
 }
 
 .Project:hover .Project-overlay {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .Project-image {
@@ -214,13 +258,6 @@ ul li {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(255,35,98,1);
-  background-image: -ms-linear-gradient(right, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: -moz-linear-gradient(right, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: -o-linear-gradient(right, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(62,35,255,1)), color-stop(100, rgba(255,35,98,1)));
-  background-image: -webkit-linear-gradient(right, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: linear-gradient(to left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
   z-index: 0;
   color: #FFFFFF;
   opacity: 0;
@@ -237,18 +274,190 @@ ul li {
   padding: 10px;
 }
 
+
+
+
+/****** REVIEWS ******/
+
+.Reviews {
+  padding: 60px 0;
+  text-align: right;
+}
+
+.Reviews h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.Reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.Reviews-column:first-child {
+  width: calc(45% - 20px);
+  margin-right: 20px;
+  display: flex;
+}
+
+.Reviews-column:nth-child(2){
+  width: calc(57% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Reviews-column:nth-child(2) .Reviews-single{
+  margin-top: 20px;
+}
+
+.Reviews-column:nth-child(2) .Reviews-single:first-child{
+  margin-top: 0px;
+}
+
+
+.Reviews-column:last-child {
+  margin-top: 20px;
+}
+
+
+.Reviews-single {
+  background-color: white;
+  font-size: 17px;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+  padding: 20px;
+  color: #5c5c5c;
+}
+
+.Reviews-single small {
+  font-size: 10px;
+}
+
+.Reviews-single p {
+  margin: 0;
+}
+
+.Reviews-author {
+  font-size: 14px;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+
+@media (max-width: 800px) {
+  .Reviews-column,
+  .Reviews-column:first-child,
+  .Reviews-column:nth-child(2),
+  .Reviews-column:last-child {
+    width: 100%;
+    margin: 0;
+  }
+
+  .Reviews-single {
+    margin: 20px 0;
+  }
+}
+
+
+
+/****** INSTAGRAM ******/
+
+.Instagram {
+  padding: 60px 0;
+}
+
+.Instagram h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.Instagram-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .Instagram-all {
+    flex-wrap: wrap;
+  }
+}
+
+.Instagram-single {
+  width: calc(100%/8 - 10px);
+}
+
+.Instagram-single:last-child {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .Instagram-single {
+    width: calc(100%/4 - 10px);
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Instagram-single {
+    width: calc(100%/3 - 10px);
+    padding-bottom: 10px;
+  }
+
+  .Instagram-single:last-child {
+    display: block;
+  }
+}
+
+.Instagram-single a {
+  display: block;
+  line-height: 0;
+  position: relative;
+}
+
+.Instagram-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.Instagram-single:hover .Instagram-overlay {
+  opacity: 1;
+}
+
+
+
+
+.Instagram-single video,
+.Instagram-single img {
+  width: 100%;
+}
+
+
+
+
+
 /****** CONTACT ******/
 
 .Contact {
-  background: rgba(116,227,236, 1);
-  background-image: -ms-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: -moz-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: -o-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: -webkit-gradient(linear, left top, left top, color-stop(0, rgba(62,35,255,1)), color-stop(100, rgba(255,35,98,1)));
-  background-image: -webkit-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  background-image: linear-gradient(to right, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
-  color: #FFFFFF;
   padding: 60px 0;
+  text-align: right;
+}
+
+.Contact h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .Contact a {
@@ -261,7 +470,7 @@ ul li {
 
 .Contact-social {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding-top: 10px;
 }
 
@@ -271,16 +480,9 @@ ul li {
 }
 
 .Contact-social a img {
-  width: 90%;
-  margin: 0 auto;
-  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-  border-radius: 12px;
+  width: 100%;
 }
 
-.Contact-ctas {
-  display: flex;
-  justify-content: center;
-}
 
 
 /****** FOOTER ******/

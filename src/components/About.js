@@ -1,46 +1,41 @@
 import React, { Component } from 'react';
 import '../App.css';
-import about from '../headings/about.svg'
-import react from '../icons/react.png'
-import angularjs from '../icons/angularjs.png'
-import css3 from '../icons/css3.png'
-import git from '../icons/git.png'
-import html5 from '../icons/html5.png'
-import javascript from '../icons/javascript.png'
-import jquery from '../icons/jquery.png'
-import photoshop from '../icons/photoshop.png'
-import php from '../icons/php.png'
-import sass from '../icons/sass.png'
-import shopify from '../icons/shopify.png'
-import wordpress from '../icons/wordpress.png'
+import resume from '../Kellee-Martins-Resume.pdf'
 
 class About extends Component {
   render() {
     return (
       	<section id="about" className="About gradient">
       		<div className="About-container">
-  	        	<img className="About-heading" src={about} alt="About Kellee Martins" />
+  	        <h3>the nutshell</h3>
+
+
             <div className="About-text">
-  	        	<h3>My personal statement:</h3>
-  	        	<p>“My vision is to be an honest, hard working and positive leader and to be recognized internationally within the development community. I am committed to growing as a developer as I continue voraciously and intentionally learning. My mission is to create a beautiful experience for my users.”</p>
+  	        	<h4>My personal statement:</h4>
+  	        	<p>“My vision is to be an honest, hard working and positive leader and to be recognized internationally within the development community. I am committed to growing as a developer as I continue voraciously and intentionally learning. My mission is to create a beautiful web experience accessible to users all over the world.”</p>
         	  </div>
-            <div className="About-tech">
-              <h3>A few of my favorite tools:</h3>
-              <div className="About-icons">
-                <img className="About-icon" src={react} alt="React" />
-                <img className="About-icon" src={javascript} alt="Javascript" />
-                <img className="About-icon" src={angularjs} alt="AngularJS" />
-                <img className="About-icon" src={html5} alt="HTML5" />
-                <img className="About-icon" src={css3} alt="CSS3" />
-                <img className="About-icon" src={php} alt="PHP" />
-                <img className="About-icon" src={git} alt="Git" />
-                <img className="About-icon" src={sass} alt="SASS" />
-                <img className="About-icon" src={jquery} alt="JQuery" />
-                <img className="About-icon" src={photoshop} alt="Photoshop" />
-                <img className="About-icon" src={wordpress} alt="Wordpress" />
-                <img className="About-icon" src={shopify} alt="Shopify" />
-              </div>
+
+            <div className="About-text">
+              <h4>What I'm doing in my 9-5:</h4>
+              <p>ReactJS, Redux, ES6, NodeJS, MongoDb, Webpack, SCSS, AngularJS, Firebase, D3, Git, Jira</p>
             </div>
+
+            <div className="About-text">
+              <h4>What I've done before:</h4>
+              <p>HTML5, CSS3, VueJS, jQuery, PHP, WordPress, Photoshop, Shopify, Bitbucket</p>
+            </div>
+
+            <div className="About-text">
+              <h4>What I'm currently doing in my spare time:</h4>
+              <p>ReactNative, AWS, Angular, TypeScript, GraphQL, Python</p>
+            </div>
+            
+            <div className="About-text">
+              <a className="button" href={resume} download="">Download Resume</a>
+            </div>
+
+
+            
           </div>
         </section>
     );

@@ -6,9 +6,11 @@ class Hero extends Component {
   render() {
     return (
       	<section className="Hero">
-      		<img src={heroImage} className="Hero-image" alt="Kellee Martins" />
+      		{/*<img src={heroImage} className="Hero-image" alt="Kellee Martins" />*/}
+          
       		<div className="Hero-container">
-	          <h2>Front-End Developer</h2>
+            <h1 className="gradient-text">kellee martins</h1>
+	          <h2>Front-end Engineer</h2>
 	        </div>
         </section>
     );

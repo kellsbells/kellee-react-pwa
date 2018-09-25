@@ -9,7 +9,7 @@ class Footer extends Component {
       		<div className="Footer-container">
         		<a href="/" className="Footer-link">
       				<p>
-      					<img src={logo} className="Header-logo" alt="logo" />| 2017
+      					<img src={logo} className="Header-logo" alt="logo" />| {new Date().getFullYear()}
       				</p>
               	</a>
         	</div>
