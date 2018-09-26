@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import projects from '../headings/projects.svg'
 import myProjects from '../myProjects';
 import Project from './Project';
 
