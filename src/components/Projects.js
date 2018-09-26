@@ -23,7 +23,7 @@ class Projects extends Component {
 	  	return (
 	    	<section id="projects" className="Projects">
 	    		<div className="Projects-container">
-		        	<h3>all the things</h3>
+		        	<h3 className="gradient-text">all the things</h3>
 		            <ul className="Projects-list">
 						{
 							Object

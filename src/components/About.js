@@ -26,7 +26,7 @@ class About extends Component {
             </div>
 
             <div className="About-text">
-              <h4>What I'm currently doing in my spare time:</h4>
+              <h4>What I'm doing in my spare time:</h4>
               <p>ReactNative, AWS, Angular, TypeScript, GraphQL, Python</p>
             </div>
             

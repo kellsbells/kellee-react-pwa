@@ -6,10 +6,6 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Reviews from './components/Reviews'
-import Instagram from './components/Instagram'
-
-
-import Footer from './components/Footer'
 
 class App extends Component {
   render() {
@@ -20,9 +16,7 @@ class App extends Component {
         <About/>
         <Projects/>
         <Reviews/>
-        <Instagram/>
         <Contact/>
-        <Footer/>
       </div>
     );
   }
