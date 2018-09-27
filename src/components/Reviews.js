@@ -17,7 +17,7 @@ const Reviews = () => (
             <p>Your enthusiasm and dedication to getting shit done means a lot. You are our duct tape programmer<sup>*</sup></p>
             <p className="Reviews-author">Kellee's Boss</p>
             <small><sup>*</sup><a href="https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/" rel="noopener noreferrer" target="_blank">
-                Duct tape developer
+                What is a duct tape developer?
             </a></small>
           </div>
           <div className="Reviews-single">
