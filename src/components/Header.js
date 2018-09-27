@@ -13,16 +13,12 @@ class Header extends Component {
   }
 
   toggleHamburger() {
-    console.log('hi')
     this.setState(prevState => ({
         hamburgerHelper: !prevState.hamburgerHelper
     }));
   }
 
-
-
   render() {
-
     return (
       	<header className="Header gradient">
       		<div className="Header-container">
