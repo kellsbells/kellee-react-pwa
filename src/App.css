@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  font-display: swap;
   color: #5c5c5c;
   box-sizing: border-box;
   font-size: 18px;
@@ -42,6 +43,7 @@ body {
   border-radius: 3px;
   box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
   font-family: 'Montserrat', sans-serif;
+  font-display: swap;
 }
 
 .button:hover {
@@ -63,6 +65,7 @@ body {
 
 .gradient-text {
   font-family: 'IBM Plex Sans', sans-serif;
+  font-display: swap;
   background: -webkit-linear-gradient(#eee, #333);
   background: -ms-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
   background: -moz-linear-gradient(left, rgba(62,35,255,1) 0%, rgba(255,35,98,1) 100%);
@@ -227,7 +230,14 @@ body {
 
 .Hero-container h1 {
   font-size: 90px;
+  line-height: 1;
   margin: 0;
+}
+
+@media (max-width: 400px) {
+  .Hero-container h1 {
+    font-size: 70px;
+  }
 }
 
 .Hero-container h2 {
@@ -250,9 +260,17 @@ body {
 
 .About h3 {
   font-family: 'IBM Plex Sans', sans-serif;
+  font-display: swap;
   font-size: 56px;
   margin: 0;
   padding-bottom: 40px;
+  line-height: 1;
+}
+
+@media (max-width: 400px) {
+  .About h3 {
+    font-size: 40px;
+  }
 }
 
 .About h4 {
@@ -279,9 +297,17 @@ ul li {
 
 .Projects h3 {
   font-family: 'IBM Plex Sans', sans-serif;
+  font-display: swap;
   font-size: 56px;
   margin: 0;
   padding-bottom: 40px;
+  line-height: 1;
+}
+
+@media (max-width: 400px) {
+  .Projects h3 {
+    font-size: 40px;
+  }
 }
 
 .Projects-heading {
@@ -360,9 +386,17 @@ ul li {
 
 .Reviews h3 {
   font-family: 'IBM Plex Sans', sans-serif;
+  font-display: swap;
   font-size: 56px;
   margin: 0;
   padding-bottom: 40px;
+  line-height: 1;
+}
+
+@media (max-width: 400px) {
+  .Reviews h3 {
+    font-size: 40px;
+  }
 }
 
 .Reviews-list {
@@ -447,10 +481,20 @@ ul li {
 
 .Contact h3 {
   font-family: 'IBM Plex Sans', sans-serif;
+  font-display: swap;
   font-size: 56px;
   margin: 0;
   padding-bottom: 40px;
+  line-height: 1;
 }
+
+@media (max-width: 400px) {
+  .Contact h3 {
+    font-size: 40px;
+  }
+}
+
+
 
 .Contact-social {
   display: flex;
