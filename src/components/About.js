@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
 import resume from '../Kellee-Martins-Resume.pdf'
 

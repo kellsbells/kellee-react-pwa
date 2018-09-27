@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
 
 const Reviews = () => (
@@ -15,10 +15,10 @@ const Reviews = () => (
         <div className="Reviews-column">
           <div className="Reviews-single">
             <p>Your enthusiasm and dedication to getting shit done means a lot. You are our duct tape programmer<sup>*</sup></p>
-            <small><sup>*</sup><a href="https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/" target="_blank">
-                https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/
-            </a></small>
             <p className="Reviews-author">Kellee's Boss</p>
+            <small><sup>*</sup><a href="https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/" rel="noopener noreferrer" target="_blank">
+                Duct tape developer
+            </a></small>
           </div>
           <div className="Reviews-single">
             <p>For the last time, I am not currently interested in selling kellee.com.</p>
