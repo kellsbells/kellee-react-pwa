@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import logo from '../kellee-logo.svg'
 
 class Header extends Component {
   render() {

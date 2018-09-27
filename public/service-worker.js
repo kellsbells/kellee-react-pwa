@@ -4,7 +4,6 @@
   var filesToCache = [
     '.',
     'index.html',
-    'kellee.svg',
   ];
 
   var staticCacheName = 'pages-cache-v2';
