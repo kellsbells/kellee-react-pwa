@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import resume from '../Kellee-Martins-Resume.pdf'
 
 const About = () => (
   <section id="about" className="About gradient">
@@ -28,7 +27,7 @@ const About = () => (
       </div>
       
       <div className="About-text">
-        <a className="button" href={resume} download="">Download Resume</a>
+        <a className="button" href="kelleemartins.com/Kellee-Martins-Resume.pdf" download="">Download Resume</a>
       </div>
       
     </div>
